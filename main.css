@@ -29,6 +29,12 @@ h2 {
     font-size: 30px;
 }
 
+ul {
+  text-align: left;  /* Forces text alignment to the left */
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .white-text {
     font-size: 18px;
     line-height: 1.6;
@@ -36,7 +42,7 @@ h2 {
     text-align: justify;
 }
 
-#myDIV2, #myDIV3 {
+#myDIV2, #myDIV3, #myDIV4, #myDIV5 {
     display: none; /* Initially hide the second and third sections */
 }
 
@@ -62,7 +68,7 @@ h2 {
 }
 
 #box-1 {
-  flex: 0.5;        /* Makes this box take up twice the space of box-2 */
+    flex: 0.5;        /* Makes this box take up twice the space of box-2 */
 }
 
 #box-2 {
@@ -72,7 +78,7 @@ h2 {
 }
 
 #box-3 {
-  flex: 0.5;        /* Makes this box take up twice the space of box-4 */
+    flex: 0.5;        /* Makes this box take up twice the space of box-4 */
 }
 
 #box-4 {
@@ -87,9 +93,10 @@ h2 {
     padding: 20px;
     border: 3px solid var(--primary-color);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    flex-grow: 1; /* Allows the tabs to grow and fill the available space */
 }
 
-#box-5:hover {
+.hover:hover {
     /* horizontal | vertical | blur | color */
     box-shadow: 10px 10px 8px 0px rgba(4, 4, 53, 0.3);
     
@@ -104,70 +111,106 @@ h2 {
     border-radius: 125px 125px 00px 0px;
 }
 
-.inl-1 {
+#inl-1 {
     height: 710px;
     width: 400px;
-    border: 5px solid var(--primary-color);
 }
 
-.inl-2 {
+#inl-2 {
     height: 930px;
     width: 1395px;
-    border: 5px solid var(--primary-color);
 }
 
-.fl-1 {
+#fl-1 {
     height: 1143px;
     width: 1000px;
-    border: 5px solid var(--primary-color);
 }
 
-.ef-2 {
+#ef-2 {
     height: 1046px;
     width: 1395px;
-    border: 5px solid var(--primary-color);
 }
 
-.ma-1 {
-    height: 948px;
-    width: 800px;
-    border: 5px solid var(--primary-color);
+#ma-1 {
+    height: 711px;
+    width: 600px;
 }
 
-.stem-1 {
+#stem-1 {
     height: 748px;
     width: 750px;
-    border: 5px solid var(--primary-color);
 }
 
-.stem-2 {
+#stem-2 {
     height: 785px;
     width: 1395px;
+}
+
+#raya-1 {
+    height: 600px;
+    width: 800px;
+}
+
+#raya-2 {
+    height: 1172px;
+    width: 1395px;
+}
+
+#tkc-1 {
+    height: 620px;
+    width: 1000px;
+}
+
+#tkc-2 {
+    height: 930px;
+    width: 1395px;
+}
+
+#yk-1 {
+    height: 533px;
+    width: 800px;
+}
+
+#yk-2 {
+    height: 930px;
+    width: 1395px;
+}
+
+#scc-2 {
+    height: 846px;
+    width: 1395px;
+}
+
+#pds-1 {
+    height: 567px;
+    width: 500px;
+}
+
+#pds-2 {
+    height: 820px;
+    width: 1395px;
+}
+
+.blue-border {
     border: 5px solid var(--primary-color);
 }
 
-.Lamopets {
+#lamopets {
     height: 125px;
     width: 250px;
 }
+
+#ebhive {
+    height: 125px;
+    width: 378px;
+}
+
 
 hr {
     border: none;               /* Clear default browser styles */
     height: 4px;                /* Set the thickness of the line */
     background-color: var(--primary-color);     /* Set the line color */
-    width: 60%; /* Must be less than 100% to see alignment */
+    width: 100%; /* Must be less than 100% to see alignment */
     margin-left: 0;
     margin-right: auto;
-}
-
-.hr1 {
-    width: 74%;
-}
-
-.hr2 {
-    width: 57%;
-}
-
-.hr3 {
-    width: 38%;
 }
