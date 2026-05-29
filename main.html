@@ -1,14 +1,16 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alesha's Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
-<body>
+<body class="site-body">
     <center>
-        <div class="flex-container">
-            <div class="box" id="box-1"><img src="img/Alesha_1.png" alt="Alesha" class="alesha-1"></div>
-            <div class="box" id="box-2">
+        <div class="flex-container hero-layout">
+            <div class="box hero-media" id="box-1"><img src="img/Alesha_1.png" alt="Alesha" class="alesha-1"></div>
+            <div class="box hero-content" id="box-2">
                 <h1>Alesha Noor binti Mohammad Salim</h1>
                 <h2>Entry-Level Programmer</h2>
                 <br>
@@ -26,9 +28,12 @@
                     <div>
                         <h2>Github</h2>
                         <a href="https://github.com/4l3sh4" target="_blank"><h3>github.com/4l3sh4</h3></a>
-                        <br>
+                        <br><br>
                         <h2>LinkedIn</h2>
                         <a href="https://linkedin.com/in/alesha-noor-6bb56a311" target="_blank"><h3>linkedin.com/in/alesha-noor-6bb56a311</h3></a>
+                        <br><br>
+                        <h2>Internship Duration</h2>
+                        <h3>27 Jul 2026 — 18 Oct 2025</h3>
                     </div>
                 </div>
                 <br>
@@ -41,14 +46,14 @@
                 </h3>
             </div>
         </div>
-        <div class="flex-container">
-            <div class="box-tab" onclick="myFunction1()">Clubs & Events</div>
-            <div class="box-tab" onclick="myFunction2()">Competitions</div>
-            <div class="box-tab" onclick="myFunction5()">Volunteer & Participation</div>
-            <div class="box-tab" onclick="myFunction3()">Projects</div>
-            <div class="box-tab" onclick="myFunction4()">Skills</div>
+        <div class="flex-container section-tabs">
+            <div class="box-tab active-tab" onclick="showSection('myDIV1', this)">Clubs & Events</div>
+            <div class="box-tab" onclick="showSection('myDIV2', this)">Competitions</div>
+            <div class="box-tab" onclick="showSection('myDIV5', this)">Volunteer & Participation</div>
+            <div class="box-tab" onclick="showSection('myDIV3', this)">Projects</div>
+            <div class="box-tab" onclick="showSection('myDIV4', this)">Skills</div>
         </div>
-        <div id="myDIV1">
+        <div id="myDIV1" class="section-panel is-visible">
             <br>
             <h1>Clubs & Events</h1>
             <br>
@@ -56,6 +61,7 @@
                 <div class="box" id="box-3"><img src="img/INL_1.jpeg" alt="INL #1" class="blue-border" id="inl-1"></div>
                 <div class="box" id="box-4">
                     <h1>Integrity & Leadership 2024</h1>
+                    <br>
                     <h2>➥ Head of Media Division • Aug 2024 — Sep 2024</h2>
                     <hr class="hr">
                     <h3>
@@ -71,6 +77,7 @@
             <div class="flex-container">
                 <div class="box" id="box-4">
                     <h1>Students' College Committee</h1>
+                    <br>
                     <h2>➥ Floor Leader • Jan 2025 — Dec 2025</h2>
                     <hr class="hr">
                     <h3>
@@ -92,6 +99,7 @@
                 <div class="box" id="box-3"><img src="img/EF_1.jpeg" alt="EF #1" class="blue-border" id="inl-1"></div>
                 <div class="box" id="box-4">
                     <h1>MMU Eid Fiesta</h1>
+                    <br>
                     <h2>➥ Assistant Head of Logistics • Apr 2025</h2>
                     <hr>
                     <h3>
@@ -111,6 +119,7 @@
             <div class="flex-container">
                 <div class="box" id="box-4">
                     <h1>MindMatters</h1>
+                    <br>
                     <h2>➥ Programme • Jun 2025</h2>
                     <hr class="hr">
                     <h3>
@@ -126,6 +135,7 @@
                 <div class="box" id="box-3"><img src="img/MA_1.jpeg" alt="MA #1" class="blue-border" id="ma-1"></div>
                 <div class="box" id="box-4">
                     <h1>Malam Ambang Merdeka 2025</h1>
+                    <br>
                     <h2>Special Task • Aug 2025</h2>
                     <hr>
                     <h3>
@@ -137,6 +147,7 @@
             <div class="flex-container">
                 <div class="box" id="box-4">
                     <h1>Students' College Committee</h1>
+                    <br>
                     <h2>➥ Media & Publicity • Apr 2026 — Present</h2>
                     <hr class="hr">
                     <h3>
@@ -152,6 +163,7 @@
             <br>
             <div class="box blue-border" id="box-4">
                 <h1>Japanese Cultural Society</h1>
+                <br>
                 <h2>Promotion and External Relations • Nov 2023 — Present</h2>
                 <hr>
                 <h3>
@@ -161,6 +173,7 @@
             <br>
             <div class="box blue-border" id="box-4">
                 <h1>The ComiNation</h1>
+                <br>
                 <h2>Promotion and External Relations • Nov 2023 — Present</h2>
                 <hr>
                 <h3>
@@ -170,6 +183,7 @@
             <br>
             <div class="box blue-border" id="box-4">
                 <h1>Cyberjaya Accounting Club</h1>
+                <br>
                 <h2>Media • Nov 2025 — Nov 2025</h2>
                 <hr>
                 <h3>
@@ -177,7 +191,7 @@
                 </h3>
             </div>
         </div>
-        <div id="myDIV2">
+        <div id="myDIV2" class="section-panel is-hidden">
             <br>
             <h1>Competitions</h1>
             <br>
@@ -185,6 +199,7 @@
                 <div class="box" id="box-3"><img src="img/STEM_1.jpeg" alt="STEM #1" class="blue-border" id="stem-1"></div>
                 <div class="box" id="box-4">
                     <h1>Web App Building</h1>
+                    <br>
                     <h2>STEM Fun Carnival •2nd Place</h2>
                     <hr>
                     <h3>
@@ -197,7 +212,7 @@
             <br>
             <img src="img/STEM_2.jpeg" alt="STEM #2" class="blue-border" id="stem-2">
         </div>
-        <div id="myDIV5">
+        <div id="myDIV5" class="section-panel is-hidden">
             <br>
             <h1>Volunteer & Participation</h1>
             <br>
@@ -212,9 +227,9 @@
                     </h3>
                 </div>
             </div>
-            <br>
+            <br><br>
             <img src="img/raya_2.jpeg" alt="RAYA #2" id="raya-2" class="blue-border">
-            <br><br><br>
+            <br><br>
             <div class="flex-container">
                 <div class="box" id="box-4">
                     <h1>Taman Kucing Cyberjaya</h1>
@@ -228,7 +243,7 @@
             </div>
             <br><br>
             <img src="img/TKC_2.jpeg" alt="TKC #2" id="tkc-2" class="blue-border">
-            <br><br><br>
+            <br>
             <div class="flex-container">
                 <div class="box" id="box-3"><img src="img/YK_1.jpeg" alt="Yoakezuki #1" id="yk-1" class="blue-border"></div>
                 <div class="box" id="box-4">
@@ -240,9 +255,9 @@
                     </h3>
                 </div>
             </div>
-            <br>
+            <br><br>
             <img src="img/YK_2.jpeg" alt="Yoakezuki #2" id="yk-2" class="blue-border">
-            <br><br><br>
+            <br><br>
             <div class="flex-container">
                 <div class="box" id="box-4">
                     <h1>Perdana Discourse Series 25</h1>
@@ -257,7 +272,7 @@
             <br><br>
             <img src="img/PDS_2.jpeg" alt="PDS #2" id="pds-2" class="blue-border">
         </div>
-        <div id="myDIV3">
+        <div id="myDIV3" class="section-panel is-hidden">
             <br>
             <h1>Highlighted Projects</h1>
             <br>
@@ -361,6 +376,20 @@
             </div>
             <br>
             <div class="flex-container">
+                <a href="https://github.com/4l3sh4/RoboWars" target="_blank">
+                    <div class="box hover" id="box-5">
+                        <h2>
+                            Robowars
+                        </h2>
+                        <h3>
+                            C++ • Jun 2025
+                        </h3>
+                        <br>
+                        <h6 class="white-text">
+                            This group project made in C++ was my first introduction to object-oriented programming. It's an automized game where the size of the grid, the number of robots, and their types are determined by an input file that will be read by the program itself.
+                        </h6>
+                    </div>
+                </a>
                 <a href="https://github.com/4l3sh4/The-Funny-Yet-Concerning-Adventures-of-Kippi-the-Cat" target="_blank">
                     <div class="box hover" id="box-5">
                         <h2>
@@ -381,23 +410,9 @@
                         </h6>
                     </div>
                 </a>
-                <a href="https://github.com/4l3sh4/RoboWars" target="_blank">
-                    <div class="box hover" id="box-5">
-                        <h2>
-                            Robowars
-                        </h2>
-                        <h3>
-                            C++ • Jun 2026
-                        </h3>
-                        <br>
-                        <h6 class="white-text">
-                            This group project made in C++ was my first introduction to object-oriented programming. It's an automized game where the size of the grid, the number of robots, and their types are determined by an input file that will be read by the program itself.
-                        </h6>
-                    </div>
-                </a>
             </div>
         </div>
-        <div id="myDIV4">
+        <div id="myDIV4" class="section-panel is-hidden">
             <br>
             <h1>Skills</h1>
             <br>
